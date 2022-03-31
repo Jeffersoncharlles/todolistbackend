@@ -12,5 +12,6 @@ Routers.get('/',(req:Request,res:Response)=>{
 })
 
 Routers.get('/list',taskController.getAll)
+Routers.post('/task',taskController.create)
 
 export {Routers}
