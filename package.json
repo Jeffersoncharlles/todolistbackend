@@ -6,8 +6,8 @@
   "author": "Jefferson Charlles <contato@jefferdeveloper.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src/index.ts",
-    "start": "node build/src/index.js",
+    "dev": "ts-node-dev index.ts",
+    "start": "node build/index.js",
     "build": "tsc",
     "postinstall": "npm run build"
   },

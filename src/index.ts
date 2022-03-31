@@ -1,12 +1,7 @@
 import express from 'express'
+import {app,PORT} from '../index'
 import { Routers } from './routers';
-import { connectDB } from './database/db';
-import 'dotenv/config'
 
-const PORT = process.env.PORT || 3333
-
-connectDB()
-const app = express();
 app.use(express.json())
 app.use(Routers)
 
