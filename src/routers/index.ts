@@ -11,7 +11,11 @@ Routers.get('/',(req:Request,res:Response)=>{
     return res.json({message:'Hello World'})
 })
 
-Routers.get('/list',taskController.getAll)
 Routers.post('/task',taskController.create)
+Routers.get('/list',taskController.getAll)
+Routers.get('/list/:id',taskController.getById)
+Routers.put('/task/:id',taskController.update)
+Routers.delete('/task/:id',taskController.destroy)
+
 
 export {Routers}
