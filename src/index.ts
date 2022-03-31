@@ -1,7 +1,9 @@
 import express from 'express'
 import { Routers } from './routers';
 import { connectDB } from './database/db';
-const PORT = 3333
+import 'dotenv/config'
+
+const PORT = process.env.PORT || 3333
 
 connectDB()
 const app = express();
