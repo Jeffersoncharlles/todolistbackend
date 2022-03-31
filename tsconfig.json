@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2016",   //versão do javascript                               
+    "module": "commonjs", //
+    "esModuleInterop": true,                      
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true 
+  }
+}
